@@ -1,8 +1,8 @@
-package com.example.mybatisdemo.dao.Impl;
+package com.example.mybatisdemo.dao.demo.Impl;
 
-import com.example.mybatisdemo.dao.PersonDao;
-import com.example.mybatisdemo.mapper.PersonMapper;
-import com.example.mybatisdemo.model.PersonRecord;
+import com.example.mybatisdemo.dao.demo.PersonDao;
+import com.example.mybatisdemo.mapper.demo.PersonMapper;
+import com.example.mybatisdemo.model.demo.PersonRecord;
 import org.mybatis.dynamic.sql.render.RenderingStrategies;
 import org.mybatis.dynamic.sql.select.render.SelectStatementProvider;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-import static com.example.mybatisdemo.entity.PersonDynamicSqlSupport.*;
+import static com.example.mybatisdemo.entity.demo.PersonDynamicSqlSupport.*;
 import static org.mybatis.dynamic.sql.SqlBuilder.*;
 
 @Repository

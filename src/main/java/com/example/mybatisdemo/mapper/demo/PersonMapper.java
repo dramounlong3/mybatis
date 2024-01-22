@@ -1,9 +1,9 @@
-package com.example.mybatisdemo.mapper;
+package com.example.mybatisdemo.mapper.demo;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.example.mybatisdemo.model.PersonRecord;
+import com.example.mybatisdemo.model.demo.PersonRecord;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.ResultMap;

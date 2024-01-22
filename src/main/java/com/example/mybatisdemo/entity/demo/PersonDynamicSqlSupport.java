@@ -1,4 +1,4 @@
-package com.example.mybatisdemo.entity;
+package com.example.mybatisdemo.entity.demo;
 
 import org.mybatis.dynamic.sql.SqlColumn;
 import org.mybatis.dynamic.sql.SqlTable;
@@ -27,7 +27,7 @@ public final class PersonDynamicSqlSupport {
         public final SqlColumn<Integer> addressId = column("address_id", JDBCType.INTEGER);
 
         public Person() {
-            super("Person");
-        }
+            super("person");
+        } //字串內為table name
     }
 }

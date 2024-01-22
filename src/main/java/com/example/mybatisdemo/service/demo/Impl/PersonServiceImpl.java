@@ -1,8 +1,8 @@
-package com.example.mybatisdemo.service.Impl;
+package com.example.mybatisdemo.service.demo.Impl;
 
-import com.example.mybatisdemo.dao.PersonDao;
-import com.example.mybatisdemo.model.PersonRecord;
-import com.example.mybatisdemo.service.PersonService;
+import com.example.mybatisdemo.dao.demo.PersonDao;
+import com.example.mybatisdemo.model.demo.PersonRecord;
+import com.example.mybatisdemo.service.demo.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

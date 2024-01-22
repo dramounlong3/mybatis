@@ -1,8 +1,7 @@
 package com.example.mybatisdemo.controller;
 
-
-import com.example.mybatisdemo.model.demo.PersonRecord;
-import com.example.mybatisdemo.service.demo.PersonService;
+import com.example.mybatisdemo.model.custom.CustomRecord;
+import com.example.mybatisdemo.service.custom.CustomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,15 +12,15 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/demo")
-public class PersonController {
+@RequestMapping("/custom")
+public class CustomController {
 
     @Autowired
-    PersonService personService;
+    CustomService customService;
 
     @GetMapping("/list")
-    public ResponseEntity<?> getPerson() {
-        List<PersonRecord> personRecordList = personService.getPerson();
-        return ResponseEntity.status(HttpStatus.OK).body(personRecordList);
+    public ResponseEntity<?> getCustom() {
+        List<CustomRecord> customRecordList = customService.getCustom();
+        return ResponseEntity.status(HttpStatus.OK).body(customRecordList);
     }
 }

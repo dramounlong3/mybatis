@@ -1,4 +1,4 @@
-package com.example.mybatisdemo.model;
+package com.example.mybatisdemo.model.demo;
 
 import lombok.Data;
 
